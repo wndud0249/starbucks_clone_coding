@@ -4,7 +4,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
   height: 3000px;
 }
 img {
@@ -103,7 +103,7 @@ header .sub-menu ul.menu li {
   position: relative;
 }
 header .sub-menu ul.menu li::before {
-  content: '';
+  content: "";
   width: 1px;
   height: 12px;
   background-color: #e5e5e5;
@@ -212,7 +212,7 @@ header .main-menu .item .item__contents .contents__menu > ul > li ul li:hover {
 header .main-menu .item .item__contents .contents__texture {
   padding: 26px 0;
   font-size: 12px;
-  background-image: url('../images/main_menu_pattern.jpg');
+  background-image: url("../images/main_menu_pattern.jpg");
 }
 header .main-menu .item .item__contents .contents__texture h4 {
   color: #999;
@@ -239,7 +239,7 @@ header .badges .badge {
 /* VISUAL */
 .visual {
   margin-top: 120px;
-  background-image: url('../images/visual_bg.jpg');
+  background-image: url("../images/visual_bg.jpg");
   background-position: center;
 }
 .visual .inner {
@@ -373,6 +373,11 @@ header .badges .badge {
   height: 693px;
   background-color: #f6f5ef;
   position: relative;
+  transition: height 0.4s;
+  overflow: hidden;
+}
+.notice .promotion.hide {
+  height: 0;
 }
 .notice .promotion .swiper {
   width: calc(819px * 3 + 20px);
@@ -404,7 +409,7 @@ header .badges .badge {
 }
 .notice .promotion .swiper-pagination .swiper-pagination-bullet {
   background-color: transparent;
-  background-image: url('../images//promotion_slide_pager.png');
+  background-image: url("../images//promotion_slide_pager.png");
   width: 12px;
   height: 12px;
   margin-right: 6px;
@@ -414,7 +419,7 @@ header .badges .badge {
   margin-right: 0;
 }
 .notice .promotion .swiper-pagination .swiper-pagination-bullet-active {
-  background-image: url('../images/promotion_slide_pager_on.png');
+  background-image: url("../images/promotion_slide_pager_on.png");
 }
 .notice .promotion .swiper-prev,
 .notice .promotion .swiper-next {
@@ -444,4 +449,47 @@ header .badges .badge {
 .notice .promotion .swiper-next:hover {
   background-color: #333;
   color: #fff;
+}
+
+/* REWARDS */
+.rewards {
+  position: relative;
+}
+.rewards .bg-left {
+  width: 50%;
+  height: 100%;
+  background-color: #272727;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.rewards .bg-right {
+  width: 50%;
+  height: 100%;
+  background-color: #d5c798;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.rewards .inner {
+  background-image: url("../images/rewards.jpg");
+  height: 241px;
+}
+.rewards .btn-group {
+  position: absolute;
+  bottom: 24px;
+  right: 0;
+  width: 250px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.rewards .btn-group .btn.sign-up {
+  margin-right: 10px;
+}
+.rewards .btn-group .btn.sign-in {
+  width: 110px;
+}
+.rewards .btn-group .btn.gift {
+  margin-top: 10px;
+  flex-grow: 1;
 }
